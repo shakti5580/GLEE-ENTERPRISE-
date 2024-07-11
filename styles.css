@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    background-color: #3e2723; /* Dark chocolate background */
+    color: #f8f9fa; /* Light text color */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121; /* Dark header background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #FFD700; /* Gold text color */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-info {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.product-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+.more-info-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold background color */
+    color: #3e2723; /* Dark text color */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.more-info-link:hover {
+    background-color: #FFB300; /* Lighter gold on hover */
+}
+
+.buy-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.buy-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #FFD700; /* Gold background color */
+    color: #3e2723; /* Dark text color */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-link:hover {
+    background-color: #FFB300; /* Lighter gold on hover */
+}
+
+.contact-us {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    color: #FFD700; /* Gold link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #FFB300; /* Lighter gold on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+}
